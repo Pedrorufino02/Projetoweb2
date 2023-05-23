@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Cadastro_produto</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+
+            <div class="logo">
+                <a href="index.html"></a><img src="assets/imagens/logo.png" width="100px">
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="detalhes.html">Detalhes</a></li>
+                        <li><a href="autor.html">Autor</a></li>
+                        <li><a href="login_adm.html">Administrativo</a></li>
+                        <li><a href="categoria.html">Categorias</a>
+
+
+                            <ul>
+                                <li><a href="#">Moda Masculina</a></li>
+                                <li><a href="#">Moda Feminina</a></li>
+                                <li><a href="#">Moda Infantil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="login">
+                <form>
+                    <p><label>Login<input id="id" size="20" type="text"></label><br></p>
+                    <p><label>Senha<input id="Senha" size="20" type="password"></label><br></p>
+                    <a href="entrar.html"><input type="submit" value="entrar"></a>
+                    <button> <a href="esqueci.html">Esqueci a Senha</a></button>
+                    <button><a href="cadastro.html">Cadastre-se</a></button>
+                </form>
+            </div>
+
+
+        </header>
+        <main class="administrativo">
+                      
+            <div class="tela_cadastro_produto">
+                <form>
+                    <h1>Cadastro de Produtos</h1><br>
+                    <label>Descrição<input id="nome" size="32" type="text"></label><br>
+                    <label>Categoria<select>
+                            <option value="Moda Masculina">Moda Masculina</option>
+                            <option value="Moda Feminina">Moda Feminina</option>
+                            <option value="Moda Infantil">Moda Infantil</option>
+                        </select></label><br>
+                    <label>Sub-Categoria<select>
+                            <option value="Camisas Polo">Camisas Polo</option>
+                            <option value="Camisetas">Camisetas</option>
+                            <option value="Jaquetas e Casacos">Jaquetas e Casacos</option>
+                            <option value="Bermudas">Bermudas</option>
+                            <option value="Calças">Calças</option><br>
+                        </select><br>
+                        <label>Tamanho<select>
+                                <option value="Tamanho P">P</option>
+                                <option value="Tamanho M">M</option>
+                                <option value="Tamanho G">G</option>
+                                <br>
+                            </select><br>
+                            <label>Preço<input id="Preço" size="32" type="valor"></label><br>
+                            </select>
+                            <label> Imagem<input id="img_produto" type="file"></label><br>
+                            <button input id="cadastro" type="submit"> Cadastrar</button>
+                </form>
+        
+                <hr>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Sub-Categoria</th>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                        <th>Editar</th>
+                        <th>Apagar</th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>1</td>
+                        <td>Camisa Masculina</td>
+                        <td>Moda Masculina</td>
+                        <td>Camisa Polo</td>
+                        <td>M</td>
+                        <td>39,90</td>
+                        <td><button class="Edite-btn">Editar</button></td>
+                        <td><button class="Delete-btn">Apagar</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>1</td>
+                        <td>Calça Masculina</td>
+                        <td>Moda Masculina</td>
+                        <td>Calças</td>
+                        <td>G</td>
+                        <td>39,90</td>
+                        <td><button class="Edite-btn">Editar</button></td>
+                        <td><button class="Delete-btn">Apagar</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>1</td>
+                        <td>Bermuda Masculina</td>
+                        <td>Moda Masculina</td>
+                        <td>Bermudas</td>
+                        <td>M</td>
+                        <td>49,90</td>
+                        <td><button class="Edite-btn">Editar</button></td>
+                        <td><button class="Delete-btn">Apagar</button></td>
+        
+                    </tr>
+        
+        
+                </table>
+        </main>
+        <footer class="footer">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="categoria.html">Categorias</a></li>
+            </ul>
+            Pedro Henrique Rufino Gadelha
+        </footer>
+
+    </div>
+</body>
+
+</html>
