@@ -5,15 +5,18 @@
 
 .container {
     display: grid;
+
     grid-template-areas:
         'header header '
         'main main '
         'footer footer ';
-    
+
 }
-body{
+
+body {
     margin: 0;
 }
+
 .header {
     grid-area: header;
     display: flex;
@@ -39,10 +42,10 @@ body{
     align-content: center;
 }
 
-footer,
-.nav {
-    justify-content: left;
-    align-items: left;
+
+nav {
+    padding: 10px;
+
 }
 
 ul {
@@ -122,12 +125,7 @@ menu li {
     width: 150px;
 }
 
-.login {
 
-    padding: 0;
-    margin: 0;
-    width: 18%;
-}
 
 form button a {
     text-decoration: none;
@@ -354,15 +352,14 @@ label {
 
 /*final main*/
 
-.footer {
+footer {
     display: flex;
     grid-area: footer;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(252, 176, 69, 1) 0%, rgba(235, 29, 253, 1) 82%);
     color: #fff;
     padding: 10px;
-    flex-shrink: 0
-    ;
+
 }
 
 .rede_social {
@@ -381,8 +378,6 @@ label {
 
     .header {
         max-width: 1024px;
-
-        width: 100%;
     }
 
     .banner {}
@@ -393,7 +388,6 @@ label {
 
     .menu {
         display: flex;
-        line-height: 110px;
         justify-content: right;
         width: 600px;
         margin: 5px;
@@ -408,24 +402,16 @@ label {
 
     }
 
-    .login {
-        display: flex;
-        position: relative;
-        font-weight: 100px;
-        justify-content: right;
-        margin-right: 170px;
-        margin-bottom: 50px;
 
-    }
 
     .banner h1 {
         justify-content: center;
-        margin-right: 200px;
+        margin-right: 50px;
     }
 
     .banner p {
         justify-content: center;
-        margin-right: 200px;
+        margin-right: 50px;
     }
 }
 
@@ -437,7 +423,10 @@ label {
 }
 
 .login1 {
-    display: none;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    left: 550px;
 }
 
 
@@ -491,9 +480,7 @@ label {
 
     }
 
-    .login {
-        display: none;
-    }
+  
 
     .login1 {
         display: flex;
@@ -504,13 +491,6 @@ label {
 
     .menu {
         display: flex;
-        margin-right: 150px;
-        line-height: 30px;
-        padding-left: 50px;
-        margin-right: 30px;
-        right: 60px;
-        padding: 10px;
-
     }
 
 
@@ -520,20 +500,6 @@ label {
     .container {
         margin: auto;
         max-width: 425px;
-    }
-
-    .main {
-        height: 1000px;
-    }
-
-    .header,
-    .banner,
-    .footer {
-        width: 740px;
-    }
-
-    .banner {
-        width: 715px;
     }
 
     .menu {
@@ -564,10 +530,10 @@ label {
         align-content: center;
     }
 
-    .login {
-        display: none;
-    }
-
+  
+.login{
+    display: none;
+}
     .login1 {
         display: flex;
         width: 30px;
@@ -585,11 +551,8 @@ label {
     }
 
     .produtos {
-        display: ;
+
         width: 400px;
-        height: 400px;
-    
-
-
+        height: 500px;
     }
 }
